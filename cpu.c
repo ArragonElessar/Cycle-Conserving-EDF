@@ -9,8 +9,8 @@ int run(struct CPU *cpu, float *time, struct edf *edf)
     struct process *p = &edf->processes[0];
 
     // check if our task is actually released
-    if (*time < p->release_time)
-        return 0;
+    // if (*time < p->release_time)
+    //     return 0;
 
     printf("T%.0f: P%d Completions: %d.\n", *time, p->PID, p->completions);
 

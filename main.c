@@ -34,7 +34,7 @@ int main()
 
     // Start the simulation
     printf("\nEDF Starting ... \n");
-    while (time < 25.00) // change time here to hyper_period for final demonstration
+    while (time < hp) // change time here to hyper_period for final demonstration
     {
         printf("\n");
 
@@ -57,6 +57,8 @@ int main()
 
         sleep(1); // wait so we can see the output
     }
+
+    printf("T%.0f: One Hyper Period is Over, Successful Execution.!\n");
 
     return 0;
 }
